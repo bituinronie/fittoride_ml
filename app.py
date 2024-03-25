@@ -79,13 +79,7 @@ def recommend_suggest():
             age = request.form.get('age')
             
 
-            # Get the data from the POST request.
-            # age = request.form.get('age')
-            # blood_pressure_systolic = request.form.get('blood_pressure_systolic')
-            # blood_pressure_diastolic = request.form.get('blood_pressure_diastolic')
-            # heart_rate = request.form.get('heart_rate')
-            # respiration = request.form.get('respiration')
-            
+            # Get the data from the POST request.            
             DATA_CSV_FILE = pd.read_csv('ride_data_set.csv')
 
             # Load the model from the saved .pkl file
